@@ -17,7 +17,8 @@ const config: QuartzConfig = {
     },
     locale: "zh-CN",
     // 2026-10-27 上线：Pages 地址 doubxiong.github.io/blog（原占位 doubvaelin.github.io 作废）
-    baseUrl: "doubxiong.github.io/blog",
+    // 2026-10-27 上线：自定义域名 blog.doub.cc.cd（先经 doubxiong.github.io/blog 验证管线，DNS 就绪后生效）
+    baseUrl: "blog.doub.cc.cd",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {

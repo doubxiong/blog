@@ -10,7 +10,7 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "云秋雁",
     pageTitleSuffix: " | 云秋雁",
-    enableSPA: true,
+    enableSPA: false, // 2026-10-27 关闭SPA：移动端链接需点两下才跳转，改原生导航
     enablePopovers: true,
     analytics: {
       provider: "plausible",

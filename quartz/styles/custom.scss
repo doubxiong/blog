@@ -163,6 +163,17 @@ article h3 + p {
   color: var(--secondary);
   text-decoration: none;
 }
+.tags .tag-link,
+.tags a.tag-link {
+  background: none;
+  border: 1px solid var(--lightgray);
+  border-radius: 999px;
+  padding: 0.02rem 0.62rem;
+  margin: 0;
+}
+.tags .tag-link::before {
+  content: none;
+}
 
 /* ---------- 首页 ---------- */
 .home {

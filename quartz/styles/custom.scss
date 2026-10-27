@@ -171,7 +171,7 @@ article h3 + p {
   padding: 0.02rem 0.62rem;
   margin: 0;
 }
-.tags .tag-link::before {
+.tags a.tag-link::before {
   content: none;
 }
 

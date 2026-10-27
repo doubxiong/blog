@@ -39,7 +39,10 @@ a {
 a.internal {
   background: none;
 }
-a:hover {
+.page article a {
+  text-decoration: none;
+}
+.page article a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }

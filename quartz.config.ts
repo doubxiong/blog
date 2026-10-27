@@ -70,6 +70,9 @@ const config: QuartzConfig = {
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
+      // 2026-10-27 修复「没分段」：日记/随笔为一行一句、无空行分隔；Obsidian 硬换行显示正常，
+      // Quartz 默认按 CommonMark 合并成整段，启用 HardLineBreaks 让单个换行渲染为断行
+      Plugin.HardLineBreaks(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),

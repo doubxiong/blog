@@ -186,12 +186,39 @@ article h3 + p {
   }
 }
 
+/* ---------- 面包屑 ---------- */
+.breadcrumb-container {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
+.breadcrumb-container a,
+.breadcrumb-container p {
+  color: var(--gray);
+}
+.breadcrumb-container a:hover {
+  color: var(--secondary);
+}
+
 /* ---------- 移动端 ---------- */
 @media all and (max-width: 800px) {
   body { font-size: 16.5px; }
   .article-title { font-size: 1.6rem; }
-  .home h1 { font-size: 2rem; }
+  .home h1 { font-size: 1.55rem; }
   .center { padding: 0; }
+
+  .sidebar.left {
+    flex-wrap: wrap;
+  }
+  .navlinks {
+    flex-direction: row;
+    flex-basis: 100%;
+    order: 20;
+    gap: 1.15rem;
+    margin: 0.45rem 0 0.2rem;
+  }
+  .navlinks a {
+    font-size: 0.9rem;
+  }
 }
 
 

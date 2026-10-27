@@ -158,10 +158,10 @@ article p {
 }
 
 /* 分节：正文里自带的标题 */
-article h1,
-article h2,
-article h3,
-article h4 {
+.page article h1,
+.page article h2,
+.page article h3,
+.page article h4 {
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -196,7 +196,7 @@ article li {
 }
 
 /* ---------- 文章列表（首页 / 全部文章） ---------- */
-article h3:has(.entry-title) {
+.page article h3:has(.entry-title) {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 2.4rem 0 0.4rem;
@@ -204,11 +204,11 @@ article h3:has(.entry-title) {
   letter-spacing: 0.02em;
 }
 
-article h3 a.entry-title {
+.page article h3 a.entry-title {
   color: var(--dark);
 }
 
-article h3 a.entry-title:hover {
+.page article h3 a.entry-title:hover {
   color: var(--secondary);
   text-decoration: none;
 }
@@ -222,9 +222,13 @@ article h3 a.entry-title:hover {
   font-family: var(--bodyFont);
 }
 
-article h3:has(.entry-title) + p {
+.page article h3:has(.entry-title) + p {
   color: var(--darkgray);
   font-size: 0.95rem;
+}
+
+.page article h3:has(.entry-title) + p .beat {
+  height: 0.2em;
 }
 
 .tag-chip {
@@ -269,7 +273,7 @@ article h3:has(.entry-title) + p {
 }
 
 /* ---------- 首页 ---------- */
-.home h1 {
+.page article.home h1 {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -345,7 +349,7 @@ li.section-li .desc h3 a:hover {
   .content-meta {
     margin-bottom: 2.4rem;
   }
-  .home h1 {
+  .page article.home h1 {
     font-size: 1.55rem;
     margin-top: 2.4rem;
   }

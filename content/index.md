@@ -4,7 +4,7 @@ description: "云秋雁 · Doub Vaelin"
 cssclasses: [home]
 ---
 
-# 把问题命名，痛苦就消解几分。
+# 我的喜悲请你忽略不计
 
 我在上下求索。曾经是个文艺b。
 

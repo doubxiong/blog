@@ -75,7 +75,7 @@ const config: QuartzConfig = {
       // Quartz 默认按 CommonMark 合并成整段，启用 HardLineBreaks 让单个换行渲染为断行
       Plugin.HardLineBreaks(),
       Plugin.TableOfContents(),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.CrawlLinks({ markdownLinkResolution: "shortest", prettyLinks: false }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],

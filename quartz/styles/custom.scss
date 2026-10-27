@@ -167,11 +167,11 @@ article h3 + p {
 /* ---------- 首页 ---------- */
 .home {
   h1 {
-    font-size: 2.6rem;
+    font-size: 1.9rem;
     font-weight: 700;
-    letter-spacing: 0.3em;
-    line-height: 1.4;
-    margin: 0.2rem 0 1.5rem;
+    letter-spacing: 0.04em;
+    line-height: 1.65;
+    margin: 0.2rem 0 1.2rem;
   }
   blockquote {
     border-left: 2px solid var(--secondary);
@@ -183,13 +183,6 @@ article h3 + p {
   hr {
     margin: 2.4rem 0 0.4rem;
     border-top: 1px solid var(--lightgray);
-  }
-}
-
-/* 首页不重复显示站名（桌面侧栏），移动端保留顶部标题 */
-@media all and (min-width: 800px) {
-  body:has(.home) .page-title {
-    display: none;
   }
 }
 

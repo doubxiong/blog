@@ -12,9 +12,9 @@ $cjk: "LXGW WenKai", "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC", "Sour
 /* Quartz 会在 :root 里给每套字体追加 system-ui / sans-serif —— 中文字形会落到无衬线，
    所以这里用更高优先级整体重定义，把中文字体接在拉丁字体后面。 */
 html:root {
-  --titleFont: "EB Garamond", #{$cjk};
-  --headerFont: "EB Garamond", #{$cjk};
-  --bodyFont: "Source Serif 4", #{$cjk};
+  --titleFont: "EB Garamond", "LXGW WenKai", "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+  --headerFont: "EB Garamond", "LXGW WenKai", "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+  --bodyFont: "Source Serif 4", "LXGW WenKai", "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC", "Source Han Serif SC", serif;
 }
 
 body {

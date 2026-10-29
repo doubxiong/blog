@@ -94,6 +94,8 @@ export default (() => {
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        {/* 2026-10-30 接入 Cloudflare Web Analytics（site token c37cea6a59434475984acf248365adb2）：统计博客访问量，数据在 CF 账号 Analytics→Web Analytics 面板 */}
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c37cea6a59434475984acf248365adb2"}' />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js

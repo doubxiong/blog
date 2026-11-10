@@ -96,6 +96,8 @@ export default (() => {
         <meta name="generator" content="Quartz" />
         {/* 2026-10-30 接入 Cloudflare Web Analytics（site token c37cea6a59434475984acf248365adb2）：统计博客访问量，数据在 CF 账号 Analytics→Web Analytics 面板 */}
         <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c37cea6a59434475984acf248365adb2"}' />
+        {/* 2026-11-11 接入自建 Umami 统计（stats.doub.cc.cd，website id 6b383664-d072-4bd5-be05-d8a0c9ea6deb）：需要城市级访客位置，CF Web Analytics 只到国家且不存 IP；两个统计并存互为备份 */}
+        <script defer src="https://stats.doub.cc.cd/script.js" data-website-id="6b383664-d072-4bd5-be05-d8a0c9ea6deb" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
